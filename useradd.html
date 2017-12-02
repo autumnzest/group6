@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+<head>
+
+<title>Register</title>
+
+<!-- Meta-Tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="/js/birthdate.js"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+
+<!-- Style --> 
+<link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
+
+
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+<h1>Sign up</h1>
+
+<div class="container w3layouts agileits">
+
+<div class="login w3layouts agileits">
+<form name="LoginForm" method="post" action="reg.php">
+<input type="text" Name="username" placeholder="username" required="">
+<input type="password" Name="password" placeholder="password" required="">
+<input type="password" Name="v" placeholder="もう一回" required="">
+<h6><input type="radio" Name="sex" value="male" checked >男
+<input type="radio" Name="sex" value="female">女</h6><br/>
+<h6><select name="YYYY" onchange="YYYYDD(this.value)">
+    <option value="">年</option>
+  </select>
+  <select name="MM" onchange="MMDD(this.value)">
+    <option value="">月</option>
+  </select>
+  <select name="DD">
+    <option value="">日</option>
+  </select></h6><br/>
+<input type="text" Name="age" placeholder="age" required="">
+<input type="text" Name="height" placeholder="cm" required="">
+<input type="text" Name="weight" placeholder="kg" required="">
+<div class="send-button w3layouts agileits">
+
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="register w3layouts agileits">
+<input type="text" Name="job" placeholder="job" required="">
+<input type="text" Name="salary" placeholder="万" required="">
+<input type="text" Name="hobby" placeholder="hobby" required="">
+<textarea name="info" rows="15" cols="45" placeholder="個人紹介を入力してください.">
+</textarea><br/><br/>
+<div class="send-button w3layouts agileits">
+<input type="submit" value="sign up!">  <input type="button" value="return" onclick="javascript:history.go(-1);">
+</form>
+
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+
+</div>
+
+<div class="footer w3layouts agileits">
+<p>Copyright &copy; CloudGroup6</p>
+</div>
+<div style="text-align:center;">
+</div>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/EasePack.min.js"></script>
+<script src="js/rAF.js"></script>
+<script src="js/demo-1.js"></script>
+</body>
+<!-- //Body -->
+
+</html>
